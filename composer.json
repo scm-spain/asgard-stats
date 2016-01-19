@@ -1,0 +1,23 @@
+{
+  "name": "scmspain/asgard-stats",
+  "description": "Collect asgard deploy stats by environment",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Xavier Fornés",
+      "email": "xavier.fornes@scmspain.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "^3.0",
+    "guzzlehttp/guzzle": "^6.1",
+    "symfony/yaml": "^3.0"
+  },
+  "autoload": {
+    "psr-0": { "SCMSpain\\": "src/" }
+  },
+  "bin": [
+    "asgard-stats"
+  ]
+}

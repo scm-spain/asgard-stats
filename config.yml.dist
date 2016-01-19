@@ -1,0 +1,2 @@
+environments:
+  env: http://asgard.yourdomain.dev/eu-west-1/task/list.json

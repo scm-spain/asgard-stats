@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use SCMSpain\Cli\Command as StatsCommand;
+
+$appVersion = '1.0.0';
+
+$app = new Application('Asgard stats', $appVersion);
+
+$app->add(new StatsCommand\AboutCommand($appVersion));
+$app->add(new StatsCommand\WeeklyDeploysCommand($appVersion));
+$app->add(new StatsCommand\ShowEnvironmentsCommand($appVersion));
+
+$app->run();
